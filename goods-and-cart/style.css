@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.good_on_cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.good_on_card_img {
+    width: 100px;
+    height: 166px;
+}
+
+.good_on_card_name {
+    font-size: 36px;
+}
+
+.good_on_card_price {
+    font-size: 36px;
+}
+.good_on_card_price::before {
+    content: 'Цена: ';
+    font-size: 24px;
+}
+
+.good_on_cart_count {
+    font-size: 36px;
+}
+
+.good_on_cart_count::before {
+    content: 'Количество: ';
+    font-size: 24px;
+}
+
+.good_on_cart_count::after {
+    content: ' шт.';
+    font-size: 24px;
+}
+
+.good_on_cart_sum {
+    font-size: 36px;
+}
+
+.good_on_cart_sum::before {
+    font-size: 24px;
+    content: 'Сумма: ';
+}
+
+.good_on_cart_sum::after {
+    font-size: 24px;
+    content: ' руб.';
+}
+
+.total {
+    min-height: 50px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.total::before {
+    content: 'Итоговая сумма: ';
+    font-size: 24px;
+}
+
+.total::after {
+    content: ' руб.';
+    font-size: 24px;
+}
+
+.goods {
+    display: flex;
+    justify-content: space-around;
+}
+
+.good_card {
+    max-height: 700px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+.good_card_img {
+    width: 300px;
+    height: 500px;
+    margin-bottom: 15px;
+}
+
+.good_card_name {
+    font-size: 36px;
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+.good_card_price {
+    font-size: 24px;
+    color: red;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.good_card_price::after {
+    content: ' руб.';
+    font-size: 18px;
+    color: black;
+}
+
+.good_card_button {
+    font-size: 18px;
+    height: 35px;
+    max-width: 70%;
+    align-self: center;
+}
